@@ -150,7 +150,7 @@ app.post(`${GameKeyPath()}/rooms/join`, (req, res, next) => {
   })().catch(next);
 });
 
-app.post(`${GameKeyPath()}/rooms/joinramdom`, (req, res, next) => {
+app.post(`${GameKeyPath()}/rooms/joinrandom`, (req, res, next) => {
   (async () => {
     const { peerid } = req.body;
     const { ip } = req.body;
